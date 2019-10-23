@@ -11,23 +11,39 @@
   <div id="app">加载中</div>
   <script>
     window.$docsify = {
-      repo: 'https://github.com/kun95/react',
+      // repo: 'https://github.com/kun95/react',
       loadSidebar: true,
       name: '小白的React笔记',
       coverpage: true,
       themeColor: '#3F51B5',
       subMaxLevel: 3,
       search: {
-            maxAge: 86400000, // 过期时间，单位毫秒，默认一天
-            noData: '找不到结果',//搜索不到结果时显示
-            paths: 'auto',//自动
-            placeholder: '搜索'//搜索框提示
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: [], // or 'auto'
+        placeholder: '搜索',
+
+        // 支持本地化
+        placeholder: {
+          '/zh-cn/': '搜索',
+          '/': 'Type to search'
+        },
+
+        noData: 'No Results!',
+
+        // 支持本地化
+        noData: {
+          '/zh-cn/': '找不到结果',
+          '/': 'No Results'
+        },
+
+        // 搜索标题的最大程级, 1 - 6
+        depth: 2
       }
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
-  <script src="//unpkg.com/docsify-copy-code"></script>
+  <!--<script src="//unpkg.com/docsify-copy-code"></script>-->
 
 
 <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
