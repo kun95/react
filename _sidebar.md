@@ -6,5 +6,7 @@
 * [第6章 Sass/Less](chapter6/)
 * [第7章 项目实战](chapter7/)
     * [react全家桶环境搭建一](chapter7/001.md)
+    * [react全家桶环境搭建二](chapter7/002.md)
+    * [react全家桶环境搭建三](chapter7/003.md)
 * [第8章 其他](chapter16/)
 
